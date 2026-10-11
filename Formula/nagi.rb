@@ -2,20 +2,20 @@
 class Nagi < Formula
   desc "Terminal TODO app (TUI and CLI); works offline, syncs to the cloud when logged in"
   homepage "https://github.com/myksyut/nagi"
-  version "0.1.20"
+  version "0.1.22"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/myksyut/nagi/releases/download/tui-v0.1.20/nagi-aarch64-apple-darwin.tar.gz"
-      sha256 "d21829658724b3b198d9e1dc9635c1a57f756053dec550b3e0bed59828e8e986"
+      url "https://github.com/myksyut/nagi/releases/download/tui-v0.1.22/nagi-aarch64-apple-darwin.tar.gz"
+      sha256 "781d77f9876e9e20c44e39889b44578c1324b3f35debeb3bc2a0378f683ffd06"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/myksyut/nagi/releases/download/tui-v0.1.20/nagi-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f7b47d4a23adc11e0436aac9ab4d29a3c5b079bf0ee1be9c6782b68a4f408bb2"
+      url "https://github.com/myksyut/nagi/releases/download/tui-v0.1.22/nagi-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "268a8dc43cc1aa0f1fc064a1d78afc5172d9b270dfe0a2511bcf3ce58f89c78c"
     end
   end
 
@@ -24,6 +24,6 @@ class Nagi < Formula
   end
 
   test do
-    assert_match "nagi 0.1.20", shell_output("#{bin}/nagi --version")
+    assert_match "nagi 0.1.22", shell_output("#{bin}/nagi --version")
   end
 end
